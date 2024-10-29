@@ -1,0 +1,45 @@
+{{ 'index-img.css' | asset_url | stylesheet_tag }}
+<div class="hb_image">
+  <div class="hb_main_container">
+    <div class="hb_image_section">
+      <img
+        src="{{ section.settings.bg_img | image_url: width:"2000x" }}"
+        alt=""
+        class="hb_image--style" />
+    </div>
+    <div class="hb_img_overly_text">
+      <h3 class="hb_img_overly--title">
+        {{ section.settings.title }}
+      </h3>
+      <p class="hb_img_overly--p">
+        {{ section.settings.description }}
+      </p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "index image",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      }, {
+        "type": "image_picker",
+        "id": "bg_img",
+        "label": "Background Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "index image"
+      }
+    ]
+  }
+{% endschema %}

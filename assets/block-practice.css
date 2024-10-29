@@ -1,0 +1,15 @@
+.hb_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.block-demo {
+  text-align: center;
+}
+.item-title {
+  color: blue;
+}

@@ -1,0 +1,118 @@
+<div class="practice-2-demo " style="background: {{ section.settings.bg_color}}; text-align:center">
+  {% if section.settings.show_title %}
+    <h1 style="color:{{ section.settings.title_color}}">
+      {{ section.settings.title }}
+    </h1>
+  {% endif %}
+  <div>
+    <img src="{{section.settings.my_img | image_url:width:"2000x"}}" alt="">
+  </div>
+  <div style="width: 50%;margin:0 auto">{{ section.settings.section_richtext }}</div>
+<a href="{{ section.settings.external_link }}">Click Here</a>
+</div>
+
+<div class="item-flexer">
+    {% for block in section.blocks %}
+        {% if block.type == "my_demo" %}
+            <div class="item">
+                <h3 class="title">{{ block.settings.title }}</h3>
+                <div class="block-image">
+                    <img src="{{ block.settings.image |  image_url: width: '800x' }}" alt="">
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+<div class="item-flexer">
+    {% for block in section.blocks %}
+        {% if block.type == "any_thing" %}
+            <div class="item">
+                <h3 class="title">{{ block.settings.title }}</h3>
+                <div class="block-image">
+                    <img src="{{ block.settings.image |  image_url: width: '800x' }}" alt="">
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "practice 2 demo",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Main Title",
+        "default": "please enter title"
+      },
+      {
+        "type": "image_picker",
+        "id": "my_img",
+        "label": "Select Image"
+      },
+      {
+        "type": "color_background",
+        "id": "bg_color",
+        "label": "Select Background Color"
+      },
+      {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title Color"
+      }, {
+        "type": "richtext",
+        "id": "section_richtext",
+        "label": "Enter Richtext"
+      }, {
+        "type": "checkbox",
+        "id": "show_title",
+        "label": "Show title?",
+        "default": true
+      }, {
+        "type": "url",
+        "id": "external_link",
+        "label": "External Link",
+      }
+    ],
+    "blocks": [
+        {
+            "type": "my_demo",
+            "name": "My demo",
+            "limit": 1,
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Select image"
+                }
+            ]
+        },
+        {
+            "type": "any_thing",
+            "name": "Practice block any thing",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Select image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "practice 2 demo"
+      }
+    ]
+  }
+{% endschema %}

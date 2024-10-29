@@ -1,0 +1,83 @@
+{{ 'block-practice.css' | asset_url | stylesheet_tag }}
+
+<div class="block-demo">
+  <h1>{{ section.settings.block_heading }}</h1>
+  <img
+    src="{{ section.settings.featured_image | image_url: width: "2000x" }}"
+    alt="Cat"
+    style="width: {{ section.settings.img_width }}px;height:{{ section.settings.img_height }}px">
+</div>
+<div class="hb_wrapper">
+  {% for block in section.blocks %}
+    {% if block.type == 'block' %}
+      <div class="item">
+        <img src="{{ block.settings.prod_img | image_url: width:'800x' }}" alt="">
+        <h4 class="item-title">{{ block.settings.name }}</h4>
+      </div>
+    {% endif %}
+
+  {% endfor %}
+</div>
+<div class="hb_wrapper">
+  {% for block in section.blocks %}
+    {% if block.type == 'test' %}
+      <h3>{{ block.settings.test_text }}</h3>
+    {% endif %}
+  {% endfor %}
+</div>
+{% schema %}
+  {
+    "name": "block demo practice",
+    "settings": [
+      {
+        "type": "text",
+        "id": "block_heading",
+        "label": "Heading"
+      }, {
+        "type": "image_picker",
+        "id": "featured_image",
+        "label": "Featured Image"
+      }, {
+        "type": "number",
+        "id": "img_width",
+        "label": "Image Width"
+      }, {
+        "type": "number",
+        "id": "img_height",
+        "label": "Image Height"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block Practice",
+        "settings": [
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }, {
+            "type": "image_picker",
+            "id": "prod_img",
+            "label": "Select Image"
+          }
+        ]
+      }, {
+        "type": "test",
+        "name": "test block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "test_text",
+            "label": "Enter Test Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "block demo practice"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,32 @@
+    :root {
+        --hb-ingredient-color: rgb(53, 45, 167):
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .hb_display_desktop {
+        display: block;
+    }
+
+    .hb_display_mobile {
+        display: none !important;
+    }
+    .hb_main_container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 75px;
+    }
+    .hb_line {
+        border: 1px solid #DDE7F3
+    }

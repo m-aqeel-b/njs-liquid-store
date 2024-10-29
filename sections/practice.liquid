@@ -1,0 +1,33 @@
+<h2>{{ section.settings.text  }}</h2>
+<div class="section-image">
+    <img src="{{ section.settings.my_image |  image_url: width: "2000x" }}" alt="">
+</div>
+<div class="richtext">{{ section.settings.richtext }}</div>
+{% schema %}
+{
+    "name": "Practice demo",
+    "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Main Title1",
+            "default": "Enter your section name"
+        },
+        {
+            "type": "image_picker",
+            "id": "my_image",
+            "label": "Sedtion banner image"
+        },
+        {
+            "type": "richtext",
+            "id": "richtext",
+            "label": "Richtext"
+        }
+    ],
+    "presets": [
+        {
+          "name": "Practice demo"  
+        }
+    ]
+}
+{% endschema %}
