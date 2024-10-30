@@ -6,9 +6,7 @@
     <div class="hb_wrapper">
       <div #swiperRef="" class="swiper hb_swiper_specialities">
         <div class="swiper-wrapper">
-          {% for item in section.slider %}
-
-
+          {% for block in section.blocks %}
             <div class="swiper-slide">
               <div class="hb_specialities--item">
                 <img src="{{ block.settings.slide_img |  image_url: width: '800x'  }}" alt="" />
@@ -34,7 +32,7 @@
     "settings": [],
     "blocks": [
       {
-        "type": "slider",
+        "type": "block",
         "name": "Slide",
         "settings": [
           {

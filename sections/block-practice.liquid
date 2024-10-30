@@ -8,7 +8,7 @@
     style="width: {{ section.settings.img_width }}px;height:{{ section.settings.img_height }}px">
 </div>
 <div class="hb_wrapper">
-  {% for block in section.blocks %}
+  {% for block in section.slider %}
     {% if block.type == 'block' %}
       <div class="item">
         <img src="{{ block.settings.prod_img | image_url: width:'800x' }}" alt="">
@@ -49,7 +49,7 @@
     ],
     "blocks": [
       {
-        "type": "block",
+        "type": "slider",
         "name": "Block Practice",
         "settings": [
           {

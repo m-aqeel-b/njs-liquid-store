@@ -28,32 +28,56 @@
     "index_slider_3gLdGi": {
       "type": "index-slider",
       "blocks": {
-        "slider_LHq4yg": {
-          "type": "slider",
+        "block_EmU86a": {
+          "type": "block",
           "settings": {
             "title": "Emergency Care",
             "description": "Specialists encompassing procedures like vascular surgery,                     orthopaedic surgery, neurosurgery and more",
             "slide_img": "shopify://shop_images/sl-1.png"
           }
         },
-        "slider_m8HGBw": {
-          "type": "slider",
+        "block_WD7dQd": {
+          "type": "block",
+          "settings": {
+            "title": "Emergency Care",
+            "description": "Specialists encompassing procedures like vascular surgery,                     orthopaedic surgery, neurosurgery and more",
+            "slide_img": "shopify://shop_images/sl-1.png"
+          }
+        },
+        "block_67nYph": {
+          "type": "block",
           "settings": {
             "title": "In Vitro fertilisation (IVF)",
             "description": "Specialises in assisted reproductive technologies to help                     couples achieve pregnancy with compassionate care.",
             "slide_img": "shopify://shop_images/sl-2.png"
           }
         },
-        "slider_6WCFN6": {
-          "type": "slider",
+        "block_MfCp6H": {
+          "type": "block",
+          "settings": {
+            "title": "In Vitro fertilisation (IVF)",
+            "description": "Specialises in assisted reproductive technologies to help                     couples achieve pregnancy with compassionate care.",
+            "slide_img": "shopify://shop_images/sl-2.png"
+          }
+        },
+        "block_gxntAG": {
+          "type": "block",
           "settings": {
             "title": "Orthopaedic",
             "description": "Offering a wide range of orthopaedic subspecialties like                      joint replacement, upper limb, shoulder care and more.",
             "slide_img": "shopify://shop_images/sl-3.png"
           }
         },
-        "slider_LW3AXP": {
-          "type": "slider",
+        "block_8etQFD": {
+          "type": "block",
+          "settings": {
+            "title": "Orthopaedic",
+            "description": "Offering a wide range of orthopaedic subspecialties like                      joint replacement, upper limb, shoulder care and more.",
+            "slide_img": "shopify://shop_images/sl-3.png"
+          }
+        },
+        "block_qe99MD": {
+          "type": "block",
           "settings": {
             "title": "Orthopaedic",
             "description": "Offering a wide range of orthopaedic subspecialties like                      joint replacement, upper limb, shoulder care and more.",
@@ -62,10 +86,13 @@
         }
       },
       "block_order": [
-        "slider_LHq4yg",
-        "slider_m8HGBw",
-        "slider_6WCFN6",
-        "slider_LW3AXP"
+        "block_EmU86a",
+        "block_WD7dQd",
+        "block_67nYph",
+        "block_MfCp6H",
+        "block_gxntAG",
+        "block_8etQFD",
+        "block_qe99MD"
       ],
       "settings": {}
     },
