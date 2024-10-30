@@ -261,6 +261,14 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="{{ 'style.css' | asset_url }}" media="print" onload="this.media='all'">
 
+    <link rel="stylesheet" href="{{ 'fonts.sofia.pro.css' | asset_url }}" />
+    <link rel="stylesheet" href="{{ 'fonts.pt-serif.css' | asset_url }}" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     {%- if settings.cart_type == 'drawer' -%}
       {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
       {{ 'component-cart.css' | asset_url | stylesheet_tag }}
@@ -375,5 +383,30 @@
     {%- if settings.cart_type == 'drawer' -%}
       <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper3 = new Swiper(".hb_swiper_specialities", {
+        slidesPerView: 4,
+        centeredSlides: true,
+        spaceBetween: 10,
+        breakpoints: {
+          360: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 4,
+          },
+        },
+        pagination: {
+          el: ".hb_specialities .swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    
+    </script>
   </body>
 </html>

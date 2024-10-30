@@ -25,6 +25,50 @@
         "description": "Restoring health of the patients and spread happiness to their families. We serve to enjoy a better, healthier life with very easy access."
       }
     },
+    "index_slider_3gLdGi": {
+      "type": "index-slider",
+      "blocks": {
+        "slider_LHq4yg": {
+          "type": "slider",
+          "settings": {
+            "title": "Emergency Care",
+            "description": "Specialists encompassing procedures like vascular surgery,                     orthopaedic surgery, neurosurgery and more",
+            "slide_img": "shopify://shop_images/sl-1.png"
+          }
+        },
+        "slider_m8HGBw": {
+          "type": "slider",
+          "settings": {
+            "title": "In Vitro fertilisation (IVF)",
+            "description": "Specialises in assisted reproductive technologies to help                     couples achieve pregnancy with compassionate care.",
+            "slide_img": "shopify://shop_images/sl-2.png"
+          }
+        },
+        "slider_6WCFN6": {
+          "type": "slider",
+          "settings": {
+            "title": "Orthopaedic",
+            "description": "Offering a wide range of orthopaedic subspecialties like                      joint replacement, upper limb, shoulder care and more.",
+            "slide_img": "shopify://shop_images/sl-3.png"
+          }
+        },
+        "slider_LW3AXP": {
+          "type": "slider",
+          "settings": {
+            "title": "Orthopaedic",
+            "description": "Offering a wide range of orthopaedic subspecialties like                      joint replacement, upper limb, shoulder care and more.",
+            "slide_img": "shopify://shop_images/sl-3.png"
+          }
+        }
+      },
+      "block_order": [
+        "slider_LHq4yg",
+        "slider_m8HGBw",
+        "slider_6WCFN6",
+        "slider_LW3AXP"
+      ],
+      "settings": {}
+    },
     "index_care_facility_f3ACa3": {
       "type": "index-care-facility",
       "blocks": {
@@ -124,15 +168,27 @@
         "block_VVk87k"
       ],
       "settings": {}
+    },
+    "index_core_values_pkH3hR": {
+      "type": "index-core-values",
+      "settings": {
+        "title": "our core values",
+        "sub_title": "Trust & transparency in everything we do, absolutely No Compromise in care!",
+        "description": "We offer range of medical services in-patient, out-patient, day care treatment, surgery, emergency and trauma care in the finest surroundings of Nikol, Ahmedabad. We have aim to always keep our Patients First and will strive to deliver World’s Best Care to Patients.",
+        "section_img": "shopify://shop_images/Frame_1000001878.png",
+        "btn_text": "Know Us More"
+      }
     }
   },
   "order": [
     "index_banner_8FcycF",
     "index_text_section_HzwFyM",
+    "index_slider_3gLdGi",
     "index_care_facility_f3ACa3",
     "hb_line_PpEEiQ",
     "index_excellence_fC3Urc",
     "index_img_AEpD3z",
-    "index_stats_QNGEEr"
+    "index_stats_QNGEEr",
+    "index_core_values_pkH3hR"
   ]
 }

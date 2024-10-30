@@ -1,0 +1,61 @@
+{{ 'index-core-values.css' | asset_url | stylesheet_tag }}
+<div class="hb_core_values">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <div class="hb_core_text">
+        <h2 class="hb_core--title1">
+          {{ section.settings.title }}
+        </h2>
+        <h2 class="hb_core--title2">
+          {{ section.settings.sub_title }}
+        </h2>
+        <p class="hb_core--p">
+          {{ section.settings.description }}
+        </p>
+        <button class="hb_core--btn">
+          {{ section.settings.btn_text }}</button>
+      </div>
+      <div class="hb_core_img">
+        <img src="{{ section.settings.section_img |  image_url: width: "1000x" }}" alt="" />
+        <div class="hb_core--img--overly"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "index core values",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Title"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "image_picker",
+        "id": "section_img",
+        "label": "Select Image"
+      }, {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text",
+        "info": "Insert text showd on button"
+      }
+    ],
+    "presets": [
+      {
+        "name": "index core values"
+      }
+    ]
+  }
+{% endschema %}
