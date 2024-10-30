@@ -1,0 +1,127 @@
+.hb_testimonial {
+  padding: 50px 0;
+  background: #2f63a6;
+  margin-top: 60px;
+}
+
+.hb_testimonial__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hb_testimonial--title1 {
+  font-family: Sofia Pro;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hb_testimonial--title2 {
+  font-family: PT Serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hb_testimonial-box1 {
+  background: #1bb8b8;
+  max-width: 18.8%;
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 51px;
+  margin-right: 18px;
+}
+
+.hb_tistimonial_box1_title {
+  font-family: Sofia Pro;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.hb_testim--p1 {
+  font-family: Sofia Pro;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.hb_testim--p2 {
+  font-family: Sofia Pro;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.hb_testi--item {
+  width: 100%;
+  max-width: 33.3%;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+
+.hb_testim--p {
+  font-family: Sofia Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #2f63a6;
+  margin-bottom: 6px;
+}
+
+.hb_testim--name {
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: left;
+  color: #2f63a6;
+}
+
+.hb_google--img {
+  width: 104px;
+  height: 42px;
+}
+
+.hb_testim_item--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hb_testimonial .hb_wrapper {
+  margin-top: 40px;
+}
+
+.hb_testimonial--list {
+  display: flex;
+  gap: 20px;
+  width: 82.9%;
+  justify-content: space-between;
+}

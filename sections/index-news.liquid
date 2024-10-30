@@ -1,0 +1,92 @@
+{{ 'index-news.css' | asset_url | stylesheet_tag }}
+<div class="hb_news">
+  <div class="hb_main_container">
+    <div class="hb_news_text">
+      <div class="hb_news_text--box1">
+        <h2 class="hb_news--title1">
+          {{ section.settings.title }}
+        </h2>
+        <h2 class="hb_news--title2">
+          {{ section.settings.sub_title }}
+        </h2>
+      </div>
+      <button class="hb_news-btn">
+        {{ section.settings.btn_txt }}
+      </button>
+    </div>
+    <div class="hb_news_imgs hb_display_desktop">
+      {% for block in section.blocks %}
+        <div class="hb_news_item">
+          <img
+            src="{{ block.settings.news_img |  image_url: width: '800x'  }}"
+            alt=""
+            class="hb_news--img" />
+          <h3 class="hb_news_img--title">{{ block.settings.title }}</h3>
+        </div>
+      {% endfor %}
+
+
+    </div>
+    <div class="hb_news_imgs hb_display_mobile">
+      <div class="swiper mySwiper hb_swiper--news">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="hb_news_item">
+                <img
+                  src="{{ block.settings.news_img |  image_url: width: '800x'  }}"
+                  alt=""
+                  class="hb_news--img" />
+                <h3 class="hb_news_img--title">{{ block.settings.title }}</h3>
+              </div>
+            </div>
+
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "index news",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Title"
+      }, {
+        "type": "text",
+        "id": "btn_txt",
+        "label": "Text on Button"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "News",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Enter New Title"
+          }, {
+            "type": "image_picker",
+            "id": "news_img",
+            "label": "Select New Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "index news"
+      }
+    ]
+  }
+{% endschema %}

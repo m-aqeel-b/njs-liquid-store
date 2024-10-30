@@ -1,0 +1,138 @@
+{{ 'index-testimonial.css' | asset_url | stylesheet_tag }}
+<div class="hb_testimonial">
+  <div class="hb_main_container">
+    <div class="hb_testimonial__text">
+      <h2 class="hb_testimonial--title1">
+        {{ section.settings.title }}
+      </h2>
+      <h3 class="hb_testimonial--title2">
+        {{ section.settings.sub_title }}
+      </h3>
+    </div>
+    <div class="hb_wrapper">
+      <div class="hb_testimonial-box1">
+        <h2 class="hb_tistimonial_box1_title">
+          {{ section.settings.review_result }}
+        </h2>
+        <div>
+          {{ section.settings.review_svg }}
+        </div>
+        <p class="hb_testim--p1">
+          {{ section.settings.total_reviews }}
+        </p>
+        <p class="hb_testim--p2">
+          {{ section.settings.read_more_btn_text }}
+        </p>
+      </div>
+      <div class="hb_testimonial--list hb_display_desktop">
+        {% for block in section.blocks %}
+          <div class="hb_testi--item">
+            <p class="hb_testim--p">
+              {{ block.settings.comments }}
+            </p>
+            <div class="hb_testim_item--footer">
+              <h3 class="hb_testim--name">
+                {{ block.settings.name }}
+              </h3>
+              <img
+                src="{{ section.settings.google_image |  image_url: width:'200x' }}"
+                alt=""
+                class="hb_google--img" />
+            </div>
+          </div>
+        {% endfor %}
+
+
+      </div>
+      <div class="hb_display_mobile hb_testimonial--list">
+        <div class="swiper hb_swiper--testimonial">
+          <div class="swiper-wrapper">
+
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="hb_testi--item">
+                  <p class="hb_testim--p">
+                    {{ block.settings.comments }}
+                  </p>
+                  <div class="hb_testim_item--footer">
+                    <h3 class="hb_testim--name">
+                      {{ block.settings.name }}
+                    </h3>
+                    <img
+                      src="{{ section.settings.google_image }}"
+                      alt=""
+                      class="hb_google--img" />
+                  </div>
+                </div>
+              </div>
+
+            {% endfor %}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "index testimonial",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub Title"
+      },
+      {
+        "type": "image_picker",
+        "id": "google_image",
+        "label": "Google Image"
+      },
+      {
+        "type": "text",
+        "id": "review_result",
+        "label": "Review Result"
+      }, {
+        "type": "textarea",
+        "id": "review_svg",
+        "label": "Review SVG"
+      }, {
+        "type": "text",
+        "id": "total_reviews",
+        "label": "Total Reviews"
+      }, {
+        "type": "text",
+        "id": "read_more_btn_text",
+        "label": "Read More Button Text"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "testimonial",
+        "settings": [
+          {
+            "type": "text",
+            "id": "name",
+            "label": "Name"
+          }, {
+            "type": "textarea",
+            "id": "comments",
+            "label": "Comment"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "index testimonial"
+      }
+    ]
+  }
+{% endschema %}
