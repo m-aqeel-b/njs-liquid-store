@@ -30,3 +30,102 @@
   padding-top: 16px;
   color: white;
 }
+.hb_hero_verticle_text {
+  position: absolute;
+  right: 0;
+  top: 33%;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  text-transform: capitalize;
+  font-family: Sofia Pro;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  background-color: #1bb8b8;
+  color: white;
+  padding: 19px 13px;
+}
+
+@media screen and (max-width: 1330px) {
+}
+@media screen and (max-width: 1199px) {
+  .hb_hero_section_overly {
+    top: 17.8%;
+    width: 43%;
+  }
+
+  .hb_hero_overly_title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .hb_hero_overly_p {
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 13px;
+  }
+
+  .hb_hero_verticle_text {
+    top: 20%;
+    font-size: 15px;
+    padding: 14px 8px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hb_hero_overly_title {
+    font-size: 35px;
+    line-height: 37px;
+  }
+
+  .hb_hero_overly_p {
+    padding-top: 4px;
+  }
+
+  .hb_hero_section_overly {
+    top: 16.8%;
+    width: 38%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hb_hero_section_overly {
+    top: 16.8%;
+    width: 67%;
+  }
+
+  .hb_hero_overly_title {
+    font-size: 30px;
+    line-height: 32px;
+  }
+
+  .hb_hero_overly_p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hb_hero_verticle_text {
+    font-size: 16px;
+    padding: 13px 8px;
+    margin-bottom: -18px;
+    border-radius: 0px 4px 4px 0px;
+  }
+}
+@media screen and (max-width: 381px) {
+  .hb_hero_verticle_text {
+    font-size: 14px;
+    padding: 7px 8px;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .hb_hero_verticle_text {
+    top: 25%;
+  }
+  .hb_hero_overly_title {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .hb_hero_overly_p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}

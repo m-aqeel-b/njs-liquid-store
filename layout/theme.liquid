@@ -385,6 +385,22 @@
     {%- endif -%}
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      var swiper = new Swiper(".hb_swiper--testimonial", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      var swiper2 = new Swiper(".hb_swiper--news", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".hb_news_imgs .swiper-pagination",
+          clickable: true,
+        },
+      });
+
       var swiper3 = new Swiper(".hb_swiper_specialities", {
         slidesPerView: 4,
         centeredSlides: true,
