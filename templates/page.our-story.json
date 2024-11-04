@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "our_story_hero_zPa9JD": {
+      "type": "our-story-hero",
+      "settings": {
+        "title": "about us",
+        "sub_title": "World’s best care to patients",
+        "description": "Our hospital boasts state-of-the-art infrastructure designed to provide superior medical care. With advanced technology and modern amenities, we ensure a comfortable environment for patients.",
+        "featured_img": "shopify://shop_images/Frame_1000001878.png"
+      }
+    },
+    "index_stats_xHrTcF": {
+      "type": "index-stats",
+      "blocks": {
+        "block_rWPAJC": {
+          "type": "block",
+          "settings": {
+            "name": "Super Specialities",
+            "figure": "30+",
+            "custom_svg": ""
+          }
+        },
+        "block_bwhicc": {
+          "type": "block",
+          "settings": {
+            "name": "Qualified Doctors",
+            "figure": "50+",
+            "custom_svg": ""
+          }
+        },
+        "block_36PVqy": {
+          "type": "block",
+          "settings": {
+            "name": "Bed Capacity",
+            "figure": "100+",
+            "custom_svg": ""
+          }
+        },
+        "block_rCG3LJ": {
+          "type": "block",
+          "settings": {
+            "name": "Patients Served",
+            "figure": "1.4 Million+",
+            "custom_svg": ""
+          }
+        },
+        "block_rwAmxi": {
+          "type": "block",
+          "settings": {
+            "name": "Emergency Available",
+            "figure": "24/7",
+            "custom_svg": ""
+          }
+        }
+      },
+      "block_order": [
+        "block_rWPAJC",
+        "block_bwhicc",
+        "block_36PVqy",
+        "block_rCG3LJ",
+        "block_rwAmxi"
+      ],
+      "settings": {}
+    }
+  },
+  "order": ["our_story_hero_zPa9JD", "index_stats_xHrTcF"]
+}

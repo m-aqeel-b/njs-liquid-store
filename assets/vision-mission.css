@@ -1,0 +1,125 @@
+.hb_vision_mission {
+  margin: 50px 0;
+}
+.hb_vision_mission .hb_wrapper {
+  max-width: 87.8%;
+  width: 100%;
+  margin: 0 auto;
+  gap: 80px;
+}
+.hb_vision {
+  display: flex;
+  gap: 24px;
+  max-width: 50%;
+  width: 100%;
+}
+.hb_mission {
+  display: flex;
+  gap: 24px;
+}
+.hb_vision__text--title {
+  font-family: PT Serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #0e4080;
+}
+.hb_vision__text--p {
+  font-family: Sofia Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #2f63a6;
+}
+.hb_vision__text {
+  max-width: 72.7%;
+  width: 100%;
+}
+
+@media screen and (max-width: 1330px) {
+}
+@media screen and (max-width: 1199px) {
+  .hb_vision_mission .hb_wrapper {
+    max-width: 90%;
+    width: 100%;
+    gap: 40px;
+  }
+  .hb_vision {
+    gap: 20px;
+    max-width: 50%;
+    width: 100%;
+  }
+  .hb_mission {
+    gap: 20px;
+    max-width: 50%;
+    width: 100%;
+  }
+  .hb_vision__text {
+    max-width: 100%;
+    width: 100%;
+  }
+  .hb_vision__text--title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .hb_vision__text--p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .hb_vision_mission {
+    margin: 40px 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hb_vision_mission .hb_wrapper {
+    max-width: 95%;
+    width: 100%;
+    gap: 20px;
+  }
+  .hb_vision {
+    gap: 8px;
+    max-width: 50%;
+    width: 100%;
+  }
+  .hb_mission {
+    gap: 8px;
+    max-width: 50%;
+    width: 100%;
+  }
+  .hb_vision__svg--style {
+    width: 44px;
+    height: 47px;
+  }
+  .hb_mission__svg--style {
+    width: 56px;
+    height: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hb_vision_mission {
+    flex-direction: column;
+  }
+  .hb_vision {
+    gap: 18px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .hb_mission {
+    gap: 13px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .hb_vision_mission .hb_wrapper {
+    max-width: 97%;
+    flex-direction: column;
+  }
+  .hb_mission__svg--style {
+    width: 48px;
+  }
+  .hb_vision__text--p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

@@ -33,3 +33,43 @@
     .hb_line {
         border: 1px solid #DDE7F3
     }
+    .hb_btn_style {
+        font-family: Sofia Pro;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 16px;
+        text-align: left;
+        background: linear-gradient(90deg, #3465A4 -6.7%, #1BB8B8 115.94%);
+        border-radius: 4px;
+        border: none;
+        color: white;
+        padding: 15px 10px;
+        display: flex;
+        gap: 8px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    @media screen and (max-width: 1199px){
+        .hb_btn_style {
+            font-size: 15px;
+            padding: 12px 8px;
+            gap: 5px;
+        }
+    }
+    @media screen and (max-width: 767px){
+        .hb_btn_style {
+            font-size: 14px;
+            padding: 10.5px 13.5px;
+            gap: 10px;
+            line-height: 13px;
+        }
+    }
+    @media screen and (max-width: 381px){
+        .hb_btn_style {
+            font-size: 12px;
+            padding: 7.5px 13.5px;
+            gap: 10px;
+            line-height: 13px;
+        }
+    }

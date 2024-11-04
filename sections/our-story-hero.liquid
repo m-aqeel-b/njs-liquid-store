@@ -1,0 +1,53 @@
+{{ 'our-story-hero.css' | asset_url | stylesheet_tag }}
+<div class="hb_story_hero">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <div class="hb_story_hero_text">
+        <h2 class="hb_story_hero--titile1">
+          {{ section.settings.title }}
+        </h2>
+        <h1 class="hb_story_hero--title2">
+          {{ section.settings.sub_title }}
+        </h1>
+        <p class="hb_story_hero--p">
+          {{ section.settings.description }}
+        </p>
+      </div>
+      <div class="hb_story_img">
+        <img
+          src="{{ section.settings.featured_img |  image_url: width:'500x'  }}"
+          alt=""
+          class="hb_story_img--style" />
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "our story hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub title"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }, {
+        "type": "image_picker",
+        "id": "featured_img",
+        "label": "Feature Image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "our story hero"
+      }
+    ]
+  }
+{% endschema %}

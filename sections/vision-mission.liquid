@@ -1,0 +1,55 @@
+{{ 'vision-mission.css' | asset_url | stylesheet_tag }}
+<div class="hb_vision_mission">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      {% for block in section.blocks %}
+        <div class="hb_vision">
+          <div class="hb_vision__svg">
+            {{ block.settings.svg }}
+          </div>
+          <div class="hb_vision__text">
+            <h2 class="hb_vision__text--title">{{ block.settings.title }}</h2>
+            <p class="hb_vision__text--p">
+              {{ block.settings.description }}
+            </p>
+          </div>
+        </div>
+      {% endfor %}
+
+
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "vision mission",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Vission Mission",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          }, {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description"
+          }, {
+            "type": "html",
+            "id": "svg",
+            "label": "SVG",
+            "info": "Add svg here.."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Vision mission"
+      }
+    ]
+  }
+{% endschema %}
