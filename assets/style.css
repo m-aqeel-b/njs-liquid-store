@@ -27,6 +27,9 @@
         margin: 0 auto;
         padding: 0 75px;
     }
+    .hb_wrapper {
+        display: flex;
+    }
     .hb_line {
         border: 1px solid #DDE7F3
     }

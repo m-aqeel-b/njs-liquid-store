@@ -1,0 +1,117 @@
+.hb_contac_us_hero {
+  margin: 60px 0;
+}
+.hb_contac_us_hero .hb_wrapper {
+  gap: 24px;
+}
+.hb_contact_hero--text {
+  max-width: 38.75%;
+  width: 100%;
+  background: #dde7f366;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hb_contact_hero--map {
+  width: 100%;
+  max-width: 59.37%;
+}
+.hb_contact_hero_title1 {
+  font-family: Sofia Pro;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #e94c94;
+  margin-top: 71px;
+}
+.hb_contact_hero_title2 {
+  font-family: PT Serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #0e4080;
+  margin-bottom: 52px;
+}
+.hb_contact_text {
+  font-family: Sofia Pro;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #0e4080;
+}
+.hb_contact_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.hb_contact_section--item {
+  display: flex;
+  gap: 23px;
+}
+.hb_contact_section {
+  width: 68%;
+  gap: 40px;
+}
+.hb_contact_text {
+  width: 85%;
+}
+@media screen and (max-width: 1336px) {
+  .hb_contact_hero_title2 {
+    margin-bottom: 22px;
+  }
+  .hb_contact_section {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hb_contac_us_hero .hb_wrapper {
+    flex-wrap: wrap;
+  }
+  .hb_contact_hero--text {
+    max-width: 100%;
+  }
+  .hb_contact_hero--map {
+    max-width: 100%;
+  }
+  .hb_contact_hero--text {
+    padding: 24px 0;
+  }
+  .hb_contact_hero_title1 {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hb_contact_hero_title1 {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+  }
+  .hb_contact_hero_title2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+  .hb_contact_section {
+    width: 82.2%;
+  }
+  .hb_contact_section--item {
+    gap: 15px;
+  }
+  .hb_contact_text {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+  .hb_contact_text {
+    width: 100%;
+  }
+  .hb_contac_us_hero {
+    margin-top: 0;
+  }
+}

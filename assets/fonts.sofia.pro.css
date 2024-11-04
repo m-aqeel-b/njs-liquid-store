@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProBlack.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProBlack-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProBlack-Italic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaPro-Bold.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaPro-BoldItalic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaPro-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Extra";
+  src: url("./fonts-sofia-pro/SofiaProExtraLight.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Extra";
+  src: url("./fonts-sofia-pro/SofiaProExtraLight-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProExtraLight-Italic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProLight.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProLight-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProLight-Italic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProMedium.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProMedium-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProMedium-Italic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProRegular.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Ultra";
+  src: url("./fonts-sofia-pro/SofiaProUltraLight.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProUltraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Semi";
+  src: url("./fonts-sofia-pro/SofiaProSemiBold.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProSemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("./fonts-sofia-pro/SofiaProRegular-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProRegular-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Ultra";
+  src: url("./fonts-sofia-pro/SofiaProUltraLight-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProUltraLight-Italic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro Semi";
+  src: url("./fonts-sofia-pro/SofiaProSemiBold-Italic.woff2") format("woff2"),
+    url("./fonts-sofia-pro/SofiaProSemiBold-Italic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}

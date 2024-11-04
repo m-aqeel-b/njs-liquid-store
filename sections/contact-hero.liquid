@@ -1,0 +1,84 @@
+{{ 'contact-hero.css' | asset_url | stylesheet_tag }}
+<div class="hb_contac_us_hero">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <div class="hb_contact_hero--text">
+        <h2 class="hb_contact_hero_title1">{{ section.settings.title }}</h2>
+        <h1 class="hb_contact_hero_title2">{{ section.settings.sub_title }}</h1>
+        <div class="hb_contact_section">
+          <div class="hb_contact_section--item">
+            {{ section.settings.phone_svg }}
+            <h3 class="hb_contact_text">{{ section.settings.phone }}</h3>
+          </div>
+          <div class="hb_contact_section--item">
+            {{ section.settings.email_svg }}
+            <h3 class="hb_contact_text">{{ section.settings.email }}</h3>
+          </div>
+          <div class="hb_contact_section--item">
+            {{ section.settings.address_svg }}
+            <h3 class="hb_contact_text">
+              {{ section.settings.address_text }}
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="hb_contact_hero--map">
+        <img src="{{ section.settings.google_img |  image_url: width: '500x'  }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "contact hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub title"
+      },
+      {
+        "type": "image_picker",
+        "id": "google_img",
+        "label": "Google image"
+      },
+      {
+        "type": "text",
+        "id": "phone",
+        "label": "Phone number"
+      }, {
+        "type": "html",
+        "id": "phone_svg",
+        "label": "Phone svg",
+        "info": "Add phone svg here"
+      }, {
+        "type": "text",
+        "id": "email",
+        "label": "Email"
+      }, {
+        "type": "html",
+        "id": "email_svg",
+        "label": "Email svg",
+        "info": "Add email svg here"
+      }, {
+        "type": "text",
+        "id": "address_text",
+        "label": "Address"
+      }, {
+        "type": "html",
+        "id": "address_svg",
+        "label": "Add address svg here"
+      }
+    ],
+    "presets": [
+      {
+        "name": "contact hero"
+      }
+    ]
+  }
+{% endschema %}
