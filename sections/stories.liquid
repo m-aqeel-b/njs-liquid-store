@@ -1,0 +1,72 @@
+{{ 'stories.css' | asset_url | stylesheet_tag }}
+<div class="hb_about">
+  <div class="hb_main_container">
+    <div class="hb_row1">
+      <div class="hb_row1__img">
+        <img src="{{ section.settings.row1_image |  image_url: width:'500x'  }}" alt="" />
+      </div>
+      <div class="hb_row1__text">
+        <h2 class="hb_row1__text--title">
+          {{ section.settings.row1_title }}
+        </h2>
+        <p class="hb_row1__text--p">
+          {{ section.settings.row1_description }}
+        </p>
+      </div>
+    </div>
+    <hr class="hb_line hb_line_show_max_991" />
+    <div class="hb_row2">
+      <div class="hb_row1__text">
+        <h2 class="hb_row2__text--title">
+          {{ section.settings.row2_title }}
+        </h2>
+        <p class="hb_row1__text--p">
+          {{ section.settings.row2_description }}
+        </p>
+      </div>
+      <div class="hb_row1__img">
+        <img src="{{ section.settings.row2_image |  image_url: width:'500x'  }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "stories",
+    "settings": [
+      {
+        "type": "text",
+        "id": "row1_title",
+        "label": "Row 1 title"
+      },
+      {
+        "type": "textarea",
+        "id": "row1_description",
+        "label": "Row 1 description"
+      },
+      {
+        "type": "image_picker",
+        "id": "row1_image",
+        "label": "Row 1 image"
+      },
+      {
+        "type": "text",
+        "id": "row2_title",
+        "label": "Row 2 title"
+      }, {
+        "type": "textarea",
+        "id": "row2_description",
+        "label": "Row 2 description"
+      }, {
+        "type": "image_picker",
+        "id": "row2_image",
+        "label": "Row 2 image"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Stories"
+      }
+    ]
+  }
+{% endschema %}
