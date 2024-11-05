@@ -1,0 +1,39 @@
+{{ 'our-doctors-hero.css' | asset_url | stylesheet_tag }}
+<div class="hb_doctors_hero">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <h1 class="hb_doctors--h1">{{ section.settings.title }}</h1>
+      <h2 class="hb_doctors--h2">{{ section.settings.sub_title }}</h2>
+      <p class="hb_doctors--p">
+        {{ section.settings.description }}
+      </p>
+      <div class="hb_hero_verticle_text">news of the week</div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "our doctors hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "suc_title",
+        "label": "Sub title"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "our doctors hero"
+      }
+    ]
+  }
+{% endschema %}

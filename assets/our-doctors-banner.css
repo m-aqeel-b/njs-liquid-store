@@ -1,0 +1,185 @@
+.hb_doctors_intro {
+  margin-bottom: 59px;
+}
+
+.hb_doctors_intro .hb_wrapper {
+  background-color: #2f63a6;
+}
+
+.hb_doc_intro_text {
+  width: 44.49%;
+}
+
+.hb_doc_intro_text {
+  padding: 60px 50px;
+}
+
+.hb_doc_intro_text--p {
+  font-family: Sofia Pro;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.hb_doc_intro_img {
+  width: 55.51%;
+}
+@media screen and (max-width: 1400px) {
+  .hb_doctors--tel {
+    display: none;
+  }
+}
+@media screen and (max-width: 1343px) {
+  .hb_doctors .hb_wrapper {
+    flex-wrap: wrap;
+    column-gap: 37px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .hb_doctors--item {
+    width: 30.3%;
+  }
+  .hb_doctors--h1 {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+  .hb_doctors--h2 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .hb_doctors--p {
+    width: 60%;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .hb_doctors_intro .hb_wrapper {
+    flex-direction: column;
+  }
+  .hb_doc_intro_text {
+    width: 100%;
+  }
+  .hb_doc_intro_img {
+    width: 100%;
+  }
+  .hb_doc_intro_text--p {
+    text-align: center;
+  }
+  .hb_doc_intro_text {
+    padding: 40px 40px;
+  }
+  .hb_doctors_intro {
+    margin-bottom: 50px;
+  }
+  .hb_doctors_heading {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .hb_doctors_appointment--p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hb_doctors_appointment {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .hb_doctors_appointment--btn {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hb_doctors--item {
+    width: 47%;
+  }
+  .hb_doctors_appointment--p {
+    width: 85.3%;
+  }
+  .hb_doctors_appointment--btn {
+    width: 64%;
+  }
+  .hb_doctors_heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hb_doctors--h1 {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+  }
+  .hb_doctors--h2 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 13px;
+  }
+  .hb_doctors--p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    width: 90.7%;
+  }
+  .hb_doc_intro_text--p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .hb_doc_intro_text {
+    padding: 29px 16px;
+  }
+  .hb_doctors_heading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .hb_doctors_heading {
+    width: 89%;
+  }
+  .hb_doctors .hb_wrapper {
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .hb_doctors--img {
+    height: 200px;
+  }
+  .hb_doctor--name {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .hb_doctor--spcialization {
+    font-size: 13px;
+    line-height: 18px;
+    text-align: left;
+  }
+  .hb_doctors_appointment--p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    width: 96.5%;
+  }
+  .hb_doctors_appointment--btn {
+    font-size: 16px;
+    line-height: 16px;
+    width: 90.5%;
+    gap: 16px;
+  }
+  .hb_doctors_appt_call--svg {
+    width: 18px;
+    height: 18px;
+  }
+  .hb_doctors_appt_btn_call {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .hb_hero_verticle_text {
+    top: 36px;
+    bottom: -3px;
+  }
+}

@@ -1,0 +1,121 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "our_doctors_hero_T38hex": {
+      "type": "our-doctors-hero",
+      "settings": {
+        "title": "here for you",
+        "suc_title": "Our expert doctors",
+        "description": "Our hospital is proud to have a team of exceptional doctors who are leaders in their respective fields. Each physician brings a wealth of experience, expertise, and dedication to patient care. They are committed to staying at the forefront of medical advancements, continuously updating their knowledge and skills to provide cutting-edge treatments."
+      }
+    },
+    "our_doctors_banner_b88QDj": {
+      "type": "our-doctors-banner",
+      "settings": {
+        "featured_img": "shopify://shop_images/screenshot.png",
+        "description": "Our doctors prioritize patient-centered care, taking the time to listen to patients' concerns and tailor treatment plans that meet their unique needs. They collaborate closely with multidisciplinary teams within the hospital, ensuring comprehensive and integrated care that addresses all aspects of health and wellness.\nBeyond clinical excellence, our doctors are known for their compassion and empathy, fostering strong doctor-patient relationships built on trust and understanding. They are advocates for patient education, empowering individuals to make informed decisions about their health."
+      }
+    },
+    "doctors_list_PQx7aB": {
+      "type": "doctors-list",
+      "blocks": {
+        "block_D3fxJT": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_bN7ykf": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_7JVxUF": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_VXTbxR": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_6k4UFY": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_7WqiiC": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_BBzfKW": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        },
+        "block_aYV6GU": {
+          "type": "block",
+          "settings": {
+            "name": "Dr. Yogesh Parikh",
+            "speciality": "M.S.\nSenior Orthopaedic Surgeon"
+          }
+        }
+      },
+      "block_order": [
+        "block_D3fxJT",
+        "block_bN7ykf",
+        "block_7JVxUF",
+        "block_VXTbxR",
+        "block_6k4UFY",
+        "block_7WqiiC",
+        "block_BBzfKW",
+        "block_aYV6GU"
+      ],
+      "settings": {
+        "title": "Our doctors are committed to providing exceptional care and personalized treatment plans"
+      }
+    },
+    "hb_line_4VGCcV": {
+      "type": "hb-line",
+      "settings": {}
+    },
+    "doctors_appointment_YKxYyG": {
+      "type": "doctors-appointment",
+      "settings": {
+        "description": "“With a commitment to excellence in healthcare delivery, our doctors strive to uphold the highest standards of professionalism and ethical conduct. They are not only healers but also educators and mentors, sharing their knowledge and expertise to inspire the next generation of healthcare professionals.”",
+        "btn_text": "Make An Appointment",
+        "btn_contact": "+91 99881-14443"
+      }
+    }
+  },
+  "order": [
+    "our_doctors_hero_T38hex",
+    "our_doctors_banner_b88QDj",
+    "doctors_list_PQx7aB",
+    "hb_line_4VGCcV",
+    "doctors_appointment_YKxYyG"
+  ]
+}

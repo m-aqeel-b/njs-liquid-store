@@ -1,0 +1,36 @@
+{{ 'our-doctors-banner.css' | asset_url | stylesheet_tag }}
+<div class="hb_doctors_intro">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <div class="hb_doc_intro_text">
+        <p class="hb_doc_intro_text--p">
+          {{ section.settings.description | newline_to_br }}
+        </p>
+      </div>
+      <div class="hb_doc_intro_img">
+        <img src="{{ section.settings.featured_img |  image_url: width:'500x'  }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "our doctors banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "featured_img",
+        "label": "Featured Image"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "our doctors banner"
+      }
+    ]
+  }
+{% endschema %}
