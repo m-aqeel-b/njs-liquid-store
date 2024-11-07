@@ -1,0 +1,59 @@
+<div>
+  {{ section.settings.title }}
+</div>
+<div>
+  <p>{{ section.settings.description }}</p>
+</div>
+<img
+  src="{{ section.settings.featured_img |  image_url: width:'500x'  }}"
+  alt=""
+  style="width: 100px;height:100px">
+<div>
+  <ul>
+    {% for block in section.blocks %}
+      <li>
+        {{ block.settings.list }}
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
+
+{% schema %}
+  {
+    "name": "meta test",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "image_picker",
+        "id": "featured_img",
+        "label": "Feature Image"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "blocks",
+        "name": "test list",
+        "settings": [
+          {
+            "type": "text",
+            "id": "list",
+            "label": "Test List"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "meta test"
+      }
+    ]
+  }
+{% endschema %}
