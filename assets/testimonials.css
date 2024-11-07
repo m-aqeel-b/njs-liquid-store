@@ -1,0 +1,244 @@
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.hb_tabs {
+  padding-bottom: 80px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Sofia Pro;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #0e4080;
+  opacity: 40%;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid #e94c94;
+  font-family: Sofia Pro;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left;
+  color: #0e4080;
+  opacity: 100%;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.hb_testim--p {
+  color: white;
+}
+.hb_testi--item {
+  background-color: #2f63a6;
+  width: 100%;
+  max-width: 26.1%;
+}
+.hb_testim--name {
+  color: white;
+}
+.hb_testimonial--list {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.hb_line__testimonials {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* .hb_testimonial--list:after {
+    content: "";
+    flex: auto;
+  } */
+.hb_comments__list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+.hb_comments--item {
+  max-width: 26%;
+  width: 100%;
+  background: #dde7f366;
+  padding: 34px 24px;
+}
+.hb_comments_svg {
+  margin-bottom: 13px;
+}
+.hb_comments--p {
+  font-family: Sofia Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #0e4080;
+  margin-bottom: 13px;
+}
+.hb_comments__name {
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: left;
+  color: #0e4080;
+  text-transform: capitalize;
+}
+.hb_videos__list {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.hb_video--item {
+  max-width: 26.1%;
+  width: 100%;
+}
+.hb_video_img--style {
+  border-radius: 8px;
+}
+.hb_video_item_name {
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: center;
+  color: #0e4080;
+  margin-top: 18px;
+}
+
+.hb_testi--item {
+  background-color: #2f63a6;
+  width: 100%;
+  max-width: 26.1%;
+  border-radius: 8px;
+  padding-top: 40px;
+  padding-left: 24px;
+  padding-right: 32px;
+  padding-bottom: 24px;
+}
+.hb_testim--p {
+  font-family: Sofia Pro;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: white;
+  margin-bottom: 6px;
+}
+.hb_testim_item--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hb_testim--name {
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 13px;
+  text-align: left;
+  color: white;
+}
+.hb_google--img {
+  width: 104px;
+  height: 42px;
+}
+@media screen and (max-width: 1199px) {
+  .hb_comments__list {
+    flex-wrap: wrap;
+  }
+  .hb_comments--item {
+    max-width: 40%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hb_testi--item {
+    width: 100%;
+    max-width: 47%;
+  }
+  .hb_testimonial--list {
+    max-width: 100%;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .hb_testi--item {
+    width: 100%;
+    max-width: 45%;
+  }
+  .hb_comments--item {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hb_testim_hero--title1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+  }
+  .hb_testim_hero--title2 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+  .hb_testim_hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .tab button {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 6px 4px;
+  }
+  .tab button.active {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 6px 4px;
+  }
+  .hb_testi--item {
+    width: 100%;
+    max-width: 86%;
+  }
+  .hb_comments--p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+  .hb_video--item {
+    max-width: 90%;
+    width: 100%;
+  }
+}

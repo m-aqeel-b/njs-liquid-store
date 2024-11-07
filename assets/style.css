@@ -15,6 +15,10 @@
         object-fit: cover;
     }
 
+    hr {
+        margin: 0;
+    }
+
     .hb_display_desktop {
         display: block;
     }

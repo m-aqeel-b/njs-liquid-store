@@ -1,0 +1,30 @@
+{{ 'testimonials-hero.css' | asset_url | stylesheet_tag }}
+<div class="hb_testim_hero">
+  <div class="hb_main_container">
+    <div class="hb_wrapper">
+      <h2 class="hb_testim_hero--title1">{{ section.settings.title }}</h2>
+      <h1 class="hb_testim_hero--title2">{{ section.settings.sub_title }}</h1>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "testimonials hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "sub_title",
+        "label": "Sub title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "testimonials hero"
+      }
+    ]
+  }
+{% endschema %}
